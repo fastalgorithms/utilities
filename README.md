@@ -1,6 +1,7 @@
 # utilities
 
-Commonly used utility routines that are shared among several projects
+Commonly used utility routines that are shared among several
+projects. Initial release, v1.0.0.
 
 ## List of routines:
 | File | Description |
