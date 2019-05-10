@@ -151,13 +151,13 @@ c
         write(iun87,'(a)') ''
 c
         write(iun87,'(a,a,a)') 'x = np.loadtxt("',file8,'")'
-        write(iun87,'(a)') 'x = x.reshape(np.size(x)/2,2)'
+        write(iun87,'(a)') 'x = x.reshape(int(np.size(x)/2),2)'
         write(iun87,'(a)') 'x1=x[:,0]'
         write(iun87,'(a)') 'x2=x[:,1]'
 c
         write(iun87,'(a,a,a)') 'pt.plot(x1,x2,"',ls1,'")'
         write(iun87,'(a,a,a)') 'pt.title("', title2, '")'
-cccc        write(iun87, '(a)') 'pt.axes().set_aspect("equal")'
+        write(iun87, '(a)') 'pt.axes().set_aspect("equal")'
 ccc        write(iun87,'(a)') 'pt.show()'
         write(iun87,'(a,a,a)') 'pt.savefig("',file8p,'")'
 
@@ -240,13 +240,13 @@ c
         write(iun87,'(a)') ''
 c
         write(iun87,'(a,a,a)') 'x = np.loadtxt("',file8,'")'
-        write(iun87,'(a)') 'x = x.reshape(np.size(x)/2,2)'
+        write(iun87,'(a)') 'x = x.reshape(int(np.size(x)/2),2)'
         write(iun87,'(a)') 'x1=x[:,0]'
         write(iun87,'(a)') 'x2=x[:,1]'
 c
         write(iun87,'(a)') ''
         write(iun87,'(a,a,a)') 'y = np.loadtxt("',file9,'")'
-        write(iun87,'(a)') 'y = y.reshape(np.size(y)/2,2)'
+        write(iun87,'(a)') 'y = y.reshape(int(np.size(y)/2),2)'
         write(iun87,'(a)') 'y1=y[:,0]'
         write(iun87,'(a)') 'y2=y[:,1]'
 c
@@ -355,19 +355,19 @@ c
         write(iun87,'(a)') ''
 c
         write(iun87,'(a,a,a)') 'x = np.loadtxt("',file8,'")'
-        write(iun87,'(a)') 'x = x.reshape(np.size(x)/2,2)'
+        write(iun87,'(a)') 'x = x.reshape(int(np.size(x)/2),2)'
         write(iun87,'(a)') 'x1=x[:,0]'
         write(iun87,'(a)') 'x2=x[:,1]'
 c
         write(iun87,'(a)') ''
         write(iun87,'(a,a,a)') 'y = np.loadtxt("',file9,'")'
-        write(iun87,'(a)') 'y = y.reshape(np.size(y)/2,2)'
+        write(iun87,'(a)') 'y = y.reshape(int(np.size(y)/2),2)'
         write(iun87,'(a)') 'y1=y[:,0]'
         write(iun87,'(a)') 'y2=y[:,1]'
 c
         write(iun87,'(a)') ''
         write(iun87,'(a,a,a)') 'z = np.loadtxt("',file10,'")'
-        write(iun87,'(a)') 'z = z.reshape(np.size(z)/2,2)'
+        write(iun87,'(a)') 'z = z.reshape(int(np.size(z)/2),2)'
         write(iun87,'(a)') 'z1=z[:,0]'
         write(iun87,'(a)') 'z2=z[:,1]'
 c
@@ -475,19 +475,19 @@ c
         write(iun87,'(a)') ''
 c
         write(iun87,'(a,a,a)') 'x = np.loadtxt("',file8,'")'
-        write(iun87,'(a)') 'x = x.reshape(np.size(x)/2,2)'
+        write(iun87,'(a)') 'x = x.reshape(int(np.size(x)/2),2)'
         write(iun87,'(a)') 'x1=x[:,0]'
         write(iun87,'(a)') 'x2=x[:,1]'
 c
         write(iun87,'(a)') ''
         write(iun87,'(a,a,a)') 'y = np.loadtxt("',file9,'")'
-        write(iun87,'(a)') 'y = y.reshape(np.size(y)/2,2)'
+        write(iun87,'(a)') 'y = y.reshape(int(np.size(y)/2),2)'
         write(iun87,'(a)') 'y1=y[:,0]'
         write(iun87,'(a)') 'y2=y[:,1]'
 c
         write(iun87,'(a)') ''
         write(iun87,'(a,a,a)') 'z = np.loadtxt("',file10,'")'
-        write(iun87,'(a)') 'z = z.reshape(np.size(z)/2,2)'
+        write(iun87,'(a)') 'z = z.reshape(int(np.size(z)/2),2)'
         write(iun87,'(a)') 'z1=z[:,0]'
         write(iun87,'(a)') 'z2=z[:,1]'
 c
@@ -609,25 +609,25 @@ c
         write(iun87,'(a)') ''
 c
         write(iun87,'(a,a,a)') 'x = np.loadtxt("',file8,'")'
-        write(iun87,'(a)') 'x = x.reshape(np.size(x)/2,2)'
+        write(iun87,'(a)') 'x = x.reshape(int(np.size(x)/2),2)'
         write(iun87,'(a)') 'x1=x[:,0]'
         write(iun87,'(a)') 'x2=x[:,1]'
 c
         write(iun87,'(a)') ''
         write(iun87,'(a,a,a)') 'y = np.loadtxt("',file9,'")'
-        write(iun87,'(a)') 'y = y.reshape(np.size(y)/2,2)'
+        write(iun87,'(a)') 'y = y.reshape(int(np.size(y)/2),2)'
         write(iun87,'(a)') 'y1=y[:,0]'
         write(iun87,'(a)') 'y2=y[:,1]'
 c
         write(iun87,'(a)') ''
         write(iun87,'(a,a,a)') 'z = np.loadtxt("',file10,'")'
-        write(iun87,'(a)') 'z = z.reshape(np.size(z)/2,2)'
+        write(iun87,'(a)') 'z = z.reshape(int(np.size(z)/2),2)'
         write(iun87,'(a)') 'z1=z[:,0]'
         write(iun87,'(a)') 'z2=z[:,1]'
 c
         write(iun87,'(a)') ''
         write(iun87,'(a,a,a)') 'w = np.loadtxt("',file12,'")'
-        write(iun87,'(a)') 'w = w.reshape(np.size(w)/2,2)'
+        write(iun87,'(a)') 'w = w.reshape(int(np.size(w)/2),2)'
         write(iun87,'(a)') 'w1=w[:,0]'
         write(iun87,'(a)') 'w2=w[:,1]'
 c
@@ -1372,8 +1372,11 @@ ccc        call prinf('npts=*',npts,nd)
 c
         return
         end
-c
-c
+
+
+
+
+
         SUBROUTINE quamesslen3(MES,nchar)
         CHARACTER *1 MES(1),AST
         DATA AST/'*'/
@@ -1476,7 +1479,7 @@ c
         write(iun87,'(a)') ''
 c
         write(iun87,'(a,a,a)') 'x = np.loadtxt("',file8,'")'
-        write(iun87,'(a)') 'x = x.reshape(np.size(x)/3,3)'
+        write(iun87,'(a)') 'x = x.reshape(int(np.size(x)/3),3)'
         write(iun87,'(a)') 'x1=x[:,0]'
         write(iun87,'(a)') 'x2=x[:,1]'
         write(iun87,'(a)') 'x3=x[:,2]'
