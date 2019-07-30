@@ -158,7 +158,7 @@ c
         write(iun87,'(a,a,a)') 'pt.plot(x1,x2,"',ls1,'")'
         write(iun87,'(a,a,a)') 'pt.title("', title2, '")'
         write(iun87, '(a)') 'pt.axes().set_aspect("equal")'
-ccc        write(iun87,'(a)') 'pt.show()'
+        write(iun87,'(a)') 'pt.show()'
         write(iun87,'(a,a,a)') 'pt.savefig("',file8p,'")'
 
 c
